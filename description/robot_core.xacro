@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<xacro:include filename="inertial_macros.xacro" />
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 	<material name="white">
 	    <color rgba="1 1 1 1"/>
@@ -33,6 +34,12 @@
 		    </geometry>
 		    <material name="white"/>
 		</visual>
+		<collision>
+			<origin xyz="0 0 0.03915" rpy="0 0 0"/>
+		    <geometry>
+		        <box size="0.25 0.25 0.12"/>
+		    </geometry>
+		</collision>
 	</link>
 	<joint name="left_wheel_joint" type="continuous">
 		<parent link="base_link"/>
@@ -48,6 +55,11 @@
 			</geometry>
 			<material name="blue"/>
 		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.01" radius="0.045" />/>
+			</geometry>
+		</collision>
 	</link>
 
 	<joint name="right_wheel_joint" type="continuous">
@@ -64,5 +76,48 @@
 			</geometry>
 			<material name="blue"/>
 		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.01" radius="0.045" />/>
+			</geometry>
+		</collision>
+	</link>
+	<joint name="front_caster_wheel_joint" type="fixed">
+		<parent link="chassis"/>
+		<child link="front_caster_wheel"/>
+		<origin xyz="0.075 0 -0.02085" rpy="0 0 0"/>
+	</joint>
+
+	<link name="front_caster_wheel">
+		<visual>
+			<geometry>
+				<sphere radius="0.0228125"/>
+			</geometry>
+			<material name="black"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.0228125"/>
+			</geometry>
+		</collision>
+	</link>
+	<joint name="back_caster_wheel_joint" type="fixed">
+		<parent link="chassis"/>
+		<child link="back_caster_wheel"/>
+		<origin xyz="-0.075 0 -0.02085" rpy="0 0 0"/>
+	</joint>
+
+	<link name="back_caster_wheel">
+		<visual>
+			<geometry>
+				<sphere radius="0.0228125"/>
+			</geometry>
+			<material name="black"/>
+		</visual>
+		<collision>
+			<geometry>
+				<sphere radius="0.0228125"/>
+			</geometry>
+		</collision>
 	</link>
 </robot>
