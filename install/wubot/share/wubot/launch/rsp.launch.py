@@ -1,1 +1,0 @@
-/home/user/dev_ws/src/wubot/launch/rsp.launch.py
