@@ -88,13 +88,13 @@
 	<link name="right_wheel">
 		<visual>
 			<geometry>
-				<cylinder length="0.01" radius="0.045" />/>
+				<cylinder length="0.01" radius="0.045" />
 			</geometry>
 			<material name="blue"/>
 		</visual>
 		<collision>
 			<geometry>
-				<cylinder length="0.01" radius="0.045" />/>
+				<cylinder length="0.01" radius="0.045" />
 			</geometry>
 		</collision>
 		<xacro:inertial_cylinder mass="0.1" length="0.01" radius="0.045">
