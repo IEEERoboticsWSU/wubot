@@ -60,13 +60,13 @@
 	<link name="left_wheel">
 		<visual>
 			<geometry>
-				<cylinder length="0.01" radius="0.045" />/>
+				<cylinder length="0.01" radius="0.045" />
 			</geometry>
 			<material name="blue"/>
 		</visual>
 		<collision>
 			<geometry>
-				<cylinder length="0.01" radius="0.045" />/>
+				<cylinder length="0.01" radius="0.045" />
 			</geometry>
 		</collision>
 		<xacro:inertial_cylinder mass="0.1" length="0.01" radius="0.045">
@@ -133,7 +133,7 @@
 			<mu2 value="0.001"/>
 		</gazebo>
 	</link>
-	
+	                  
 	<!-- BACK CASTER -->
 	<joint name="back_caster_wheel_joint" type="fixed">
 		<parent link="chassis"/>
