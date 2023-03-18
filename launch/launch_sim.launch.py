@@ -43,7 +43,7 @@ def generate_launch_description():
     # controller managers. Note that we are exporting delayed_controller_manager_spawner
     # instead of just diff_drive_spawner.
     delayed_controller_manager_spawner = TimerAction(
-        period=10.0,
+        period=1.0,
         actions=[
             Node(
                 package="controller_manager",
