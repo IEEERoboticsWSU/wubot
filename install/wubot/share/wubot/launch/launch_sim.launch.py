@@ -1,1 +1,0 @@
-/home/user/dev_ws/src/wubot/launch/launch_sim.launch.py

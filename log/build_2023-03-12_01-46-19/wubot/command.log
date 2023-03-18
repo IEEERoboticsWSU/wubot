@@ -1,6 +1,0 @@
-Invoking command in '/home/user/dev_ws/src/wubot/build/wubot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/user/dev_ws/src/wubot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/dev_ws/src/wubot/install/wubot
-Invoked command in '/home/user/dev_ws/src/wubot/build/wubot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/user/dev_ws/src/wubot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/dev_ws/src/wubot/install/wubot
-Invoking command in '/home/user/dev_ws/src/wubot/build/wubot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/user/dev_ws/src/wubot/build/wubot -- -j16 -l16
-Invoked command in '/home/user/dev_ws/src/wubot/build/wubot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/user/dev_ws/src/wubot/build/wubot -- -j16 -l16
-Invoking command in '/home/user/dev_ws/src/wubot/build/wubot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/user/dev_ws/src/wubot/build/wubot
-Invoked command in '/home/user/dev_ws/src/wubot/build/wubot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/user/dev_ws/src/wubot/build/wubot
